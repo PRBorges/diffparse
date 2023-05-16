@@ -1,0 +1,32 @@
+Right Normal Diff:
+
+DeleteHunk
+StartEnd 1 2
+OneLine 0
+"The Way that can be told of is not the eternal Way;\r"
+"The name that can be named is not the eternal name.\r"
+None
+
+ChangeHunk
+OneLine 4
+StartEnd 2 3
+"The Named is the mother of all things.\r"
+---
+"The named is the mother of all things.\r"
+"\r"
+None
+
+AddHunk
+OneLine 5
+OneLine 5
+"\r"
+None
+
+AddHunk
+OneLine 11
+StartEnd 12 14
+"They both may be called deep and profound.\r"
+"Deeper and more profound,\r"
+"The door of all subtleties!\r"
+None
+

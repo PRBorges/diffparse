@@ -1,0 +1,4 @@
+--- fileSamples/empty.txt	2022-10-29 16:36:53.129706000 -0400
++++ fileSamples/oneLine.txt	2022-10-29 16:36:53.133703500 -0400
+@@ -0,0 +1 @@
++This is the first and only line.

@@ -1,0 +1,10 @@
+Right Normal Diff:
+
+ChangeHunk
+OneLine 1
+OneLine 1
+"a first line changed\r"
+---
+"A first line changed\r"
+None
+

@@ -1,0 +1,14 @@
+Right Normal Diff:
+
+ChangeHunk
+StartEnd 1 3
+StartEnd 1 3
+"Spanish:  as\195\173, pap\195\161, \195\177ame.\r"
+"A brazilian letter:  \195\135\r"
+"And others: \195\187, \195\188, \195\185\195\185\r"
+---
+"Spanish:  asi, pap\195\161, \195\177ame.\r"
+"a\tbrazilian letter:  \195\135\r"
+"And others: \195\187, \195\188, \195\185u\r"
+None
+

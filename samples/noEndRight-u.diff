@@ -1,0 +1,5 @@
+--- samples/empty.txt	2022-10-28 15:47:47.623308200 -0400
++++ samples/noEndOfLine.txt	2022-10-29 11:16:29.533591000 -0400
+@@ -0,0 +1 @@
++A file without end of line at the end.
+\ No hay ningún carácter de nueva línea al final del fichero

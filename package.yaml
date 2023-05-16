@@ -1,0 +1,77 @@
+name: diffparse
+version: 0.1.0.0
+github: "prborges/diffparse"
+license: BSD3
+author: "Pedro R. Borges"
+maintainer: "pedroR.borges@gmail.com"
+copyright: "2023 Pedro R. Borges"
+
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+  - samples/*.diff
+  - test/goldenFiles/*
+
+# Metadata used when publishing your package
+synopsis: A parser for diff output
+category: parser
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description: Please see the README on GitHub at <https://github.com/prborges/diffparse#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+  - text
+  - bytestring
+
+language: GHC2021
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+library:
+  source-dirs: src
+  dependencies:
+    - attoparsec
+    - parser-combinators
+    - word8
+    - foldl
+
+executables:
+  diffparse-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - diffparse
+    when:
+      - condition: false
+        other-modules: Paths_diffparse
+
+tests:
+  diffparse-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - diffparse
+      - hspec
+      - hspec-golden
+      - filepath
+      - Glob

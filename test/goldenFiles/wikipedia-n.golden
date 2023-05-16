@@ -1,0 +1,40 @@
+Right Normal Diff:
+
+AddHunk
+OneLine 0
+StartEnd 1 6
+"This is an important"
+"notice! It should"
+"therefore be located at"
+"the beginning of this"
+"document!"
+""
+None
+
+DeleteHunk
+StartEnd 11 15
+OneLine 16
+"This paragraph contains"
+"text that is outdated."
+"It will be deleted in the"
+"near future."
+""
+None
+
+ChangeHunk
+OneLine 17
+OneLine 18
+"check this dokument. On"
+---
+"check this document. On"
+None
+
+AddHunk
+OneLine 24
+StartEnd 26 29
+""
+"This paragraph contains"
+"important new additions"
+"to this document."
+None
+

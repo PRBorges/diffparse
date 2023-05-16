@@ -1,0 +1,10 @@
+1,4c1,3
+< Second line changed
+< And a third Line changed
+< A last line added
+< A common line
+\ No hay ningún carácter de nueva línea al final del fichero
+---
+> Second Line Changed
+> And a Third line changed
+> A common line

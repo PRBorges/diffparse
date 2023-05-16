@@ -1,0 +1,61 @@
+Right Git Diff
+NameHash "a/s1-a.txt" "a413be2..dc81f09"
+NameHash "b/s1-a.txt" "100755"
+UniHunk
+StartLen 1 3
+StartLen 1 9
+Nothing
+Added:
+"This is an important"
+"notice! It should"
+"therefore be located at"
+"the beginning of this"
+"document!"
+""
+Context:
+"This part of the"
+"document has stayed the"
+"same from version to"
+None
+
+UniHunk
+StartLen 8 13
+StartLen 14 8
+Just "would not be helping to"
+Context:
+"compress the size of the"
+"changes."
+""
+Deleted:
+"This paragraph contains"
+"text that is outdated."
+"It will be deleted in the"
+"near future."
+""
+Context:
+"It is important to spell"
+Deleted:
+"check this dokument. On"
+Added:
+"check this document. On"
+Context:
+"the other hand, a"
+"misspelled word isn't"
+"the end of the world."
+None
+
+UniHunk
+StartLen 22 3
+StartLen 23 7
+Just "Nothing in the rest of"
+Context:
+"this paragraph needs to"
+"be changed. Things can"
+"be added after it."
+Added:
+""
+"This paragraph contains"
+"important new additions"
+"to this document."
+None
+

@@ -1,0 +1,10 @@
+Right Normal Diff:
+
+AddHunk
+OneLine 0
+StartEnd 1 3
+"Here a non-ascii char: \239\191\189"
+"And another: \240\159\146\150."
+"Here are some latin chars: \195\161\195\186\195\177\195\135\195\188"
+None
+

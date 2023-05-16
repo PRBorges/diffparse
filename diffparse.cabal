@@ -1,0 +1,130 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           diffparse
+version:        0.1.0.0
+synopsis:       A parser for diff output
+description:    Please see the README on GitHub at <https://github.com/prborges/diffparse#readme>
+category:       parser
+homepage:       https://github.com/prborges/diffparse#readme
+bug-reports:    https://github.com/prborges/diffparse/issues
+author:         Pedro R. Borges
+maintainer:     pedroR.borges@gmail.com
+copyright:      2023 Pedro R. Borges
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+    samples/accents-n.diff
+    samples/empty.diff
+    samples/laotzu-g.diff
+    samples/laotzu-n.diff
+    samples/laotzu-u.diff
+    samples/noEndBoth-n.diff
+    samples/noEndBoth-u.diff
+    samples/noEndLeft-n.diff
+    samples/noEndLeft-u.diff
+    samples/noEndRight-n.diff
+    samples/noEndRight-u.diff
+    samples/non-ascii-n.diff
+    samples/oneAddedLine-n.diff
+    samples/oneAddedLine-u.diff
+    samples/wikipedia-g.diff
+    samples/wikipedia-n.diff
+    samples/wikipedia-u.diff
+    test/goldenFiles/accents-n.actual
+    test/goldenFiles/accents-n.golden
+    test/goldenFiles/laotzu-g.actual
+    test/goldenFiles/laotzu-g.golden
+    test/goldenFiles/laotzu-n.actual
+    test/goldenFiles/laotzu-n.golden
+    test/goldenFiles/laotzu-u.actual
+    test/goldenFiles/laotzu-u.golden
+    test/goldenFiles/noEndBoth-n.actual
+    test/goldenFiles/noEndBoth-n.golden
+    test/goldenFiles/noEndBoth-u.actual
+    test/goldenFiles/noEndBoth-u.golden
+    test/goldenFiles/noEndLeft-n.actual
+    test/goldenFiles/noEndLeft-n.golden
+    test/goldenFiles/noEndLeft-u.actual
+    test/goldenFiles/noEndLeft-u.golden
+    test/goldenFiles/noEndRight-n.actual
+    test/goldenFiles/noEndRight-n.golden
+    test/goldenFiles/noEndRight-u.actual
+    test/goldenFiles/noEndRight-u.golden
+    test/goldenFiles/non-ascii-n.actual
+    test/goldenFiles/non-ascii-n.golden
+    test/goldenFiles/oneAddedLine-n.actual
+    test/goldenFiles/oneAddedLine-n.golden
+    test/goldenFiles/oneAddedLine-u.actual
+    test/goldenFiles/oneAddedLine-u.golden
+    test/goldenFiles/wikipedia-g.actual
+    test/goldenFiles/wikipedia-g.golden
+    test/goldenFiles/wikipedia-n.actual
+    test/goldenFiles/wikipedia-n.golden
+    test/goldenFiles/wikipedia-u.actual
+    test/goldenFiles/wikipedia-u.golden
+
+source-repository head
+  type: git
+  location: https://github.com/prborges/diffparse
+
+library
+  exposed-modules:
+      Common
+      DiffParse
+      NormalHunk
+      Types
+      UniHunk
+  other-modules:
+      Paths_diffparse
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , foldl
+    , parser-combinators
+    , text
+    , word8
+  default-language: GHC2021
+
+executable diffparse-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , diffparse
+    , text
+  default-language: GHC2021
+
+test-suite diffparse-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      CheckLines
+      DiffParseSpec
+      Paths_diffparse
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Glob
+    , base >=4.7 && <5
+    , bytestring
+    , diffparse
+    , filepath
+    , hspec
+    , hspec-golden
+    , text
+  default-language: GHC2021

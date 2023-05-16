@@ -1,0 +1,7 @@
+--- fileSamples/noEndOfLineBoth-a.txt	2022-11-12 20:42:38.529512200 -0400
++++ fileSamples/noEndOfLineBoth-b.txt	2022-11-12 20:42:36.700929000 -0400
+@@ -1,2 +1,2 @@
+-a first line changed
++A first line changed
+ a second line without endofline
+\ No hay ningún carácter de nueva línea al final del fichero

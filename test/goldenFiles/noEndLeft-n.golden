@@ -1,0 +1,15 @@
+Right Normal Diff:
+
+ChangeHunk
+StartEnd 1 4
+StartEnd 1 3
+"Second line changed\r"
+"And a third Line changed\r"
+"A last line added\r"
+"A common line"
+---
+"Second Line Changed\r"
+"And a Third line changed\r"
+"A common line\r"
+LeftNote
+

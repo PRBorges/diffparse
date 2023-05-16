@@ -1,0 +1,11 @@
+Right Unified Diff:
+NameTime "samples/empty.txt" "2022-10-28 15:47:47.623308200 -0400"
+NameTime "samples/noEndOfLine.txt" "2022-10-29 11:16:29.533591000 -0400"
+UniHunk
+StartLen 0 0
+OneLine 1
+Nothing
+Added:
+"A file without end of line at the end."
+RightNote
+
