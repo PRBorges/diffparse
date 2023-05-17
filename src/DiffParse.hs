@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module DiffParse (diffParse) where
+module DiffParse (diffParse, module Types) where
 
 import Common (lineAfterParser)
 import Control.Applicative ((<|>))

@@ -11,7 +11,6 @@ import System.FilePath (addExtension, takeBaseName, (</>))
 import System.FilePath.Glob (compile, globDir1)
 import Test.Hspec
 import Test.Hspec.Golden
-import Types
 
 samplesDir, goldenDir :: FilePath
 samplesDir = "samples"
